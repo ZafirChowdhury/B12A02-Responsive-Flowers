@@ -255,24 +255,6 @@
     font-size: 0.9rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-links {
-        gap: 30px;
-    }
-}
-
-@media (max-width: 576px) {
-    .footer-content {
-        flex-direction: column;
-    }
-    
-    .footer-links {
-        flex-direction: column;
-        gap: 40px;
-    }
-}
-
 /* responsive */
 @media screen and (max-width: 576px) {
     .header {
@@ -324,5 +306,16 @@
         height: 50px;
     }
 
+    .nav-title {
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
     
+    .footer-links {
+        flex-direction: column;
+        gap: 40px;
+    }
 }
