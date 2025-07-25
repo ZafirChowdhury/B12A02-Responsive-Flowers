@@ -6,8 +6,16 @@
     color: #252432;
 }
 
+.orange-text {
+    color: orangered;
+}
+
 .body {
     background-color: #F5F8FF;
+}
+
+.body-margin {
+    margin: 30px 150px;
 }
 
 /* header */
@@ -15,8 +23,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    margin: 30px 150px;
 }
 
 .primary-nav {
@@ -36,6 +42,18 @@
     margin-right: 5px;
 }
 
+/* hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-title {
+    font-size: 4rem;
+}
+
+
+
 /* responsive */
 @media screen and (max-width: 576px) {
     .header {
@@ -54,4 +72,17 @@
     .link-none {
         display: none;
     }
+    
+    .hero {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+        overflow: hidden;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
 }
