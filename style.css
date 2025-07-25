@@ -123,6 +123,19 @@
     align-self: flex-start;
 }
 
+.trusted-badge-box {
+    position: relative;
+}
+
+.trusted-badge-img {
+    position: absolute;
+    width: 124px;
+    height: 124px;
+
+    left: 250px;
+    top: -190px;
+}
+
 /* join section */
 .join-box {
     display: flex;
@@ -317,5 +330,9 @@
     .footer-links {
         flex-direction: column;
         gap: 40px;
+    }
+
+    .trusted-badge-box {
+        display: none;
     }
 }
