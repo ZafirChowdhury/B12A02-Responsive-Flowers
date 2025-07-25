@@ -426,4 +426,8 @@
     .section-title {
         font-size: 1.5rem;
     }
+
+    .body-margin {
+        margin: 5px 10px;
+    }
 }
