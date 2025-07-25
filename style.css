@@ -1,3 +1,11 @@
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 .light-gray {
     color: #8987A1;
 }
@@ -40,6 +48,10 @@
 
 .primary-nav a {
     text-decoration: none;
+}
+
+.primary-nav a:hover {
+    color: #252432; /* Dark gray on hover */
 }
 
 #cart-img {
@@ -111,6 +123,54 @@
     align-self: flex-start;
 }
 
+/* join section */
+.join-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("assets/news-letter-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 100%;
+    height: 540px;
+    margin: 0 auto;
+    
+    text-align: center;
+}
+
+.join-box h3 {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.join-inputs-box {
+    width: 830px;
+    height: 50px;
+    display: flex;
+}
+
+.join-box-email {
+    width: 70%;
+    height: 100%;
+    border: none;
+    padding: 0;
+    padding-left: 15px;
+}
+
+.join-box-button {
+    color: #FFFFFF;
+    width: 30%;
+    height: 100%;
+    height: 50px;
+    border: none;
+    background-color: #E95A08;
+}
 
 /* responsive */
 @media screen and (max-width: 576px) {
@@ -154,4 +214,12 @@
         padding: 0px;
     }
 
+    .join-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .join-inputs-box {
+        width: 320px;
+        height: 50px;
+    }
 }
